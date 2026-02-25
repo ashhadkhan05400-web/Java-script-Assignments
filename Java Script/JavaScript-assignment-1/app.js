@@ -155,3 +155,141 @@ console.log("--a - --b + ++b + b-- = 2")
           // Question#3
 var usernamee = "Jhon Snow" ;
 // alert("hello  " +  usernamee + "  welcome to my site")
+
+
+       //Chp-9 to 11-Questions
+
+          // Question#1
+// var cityname=prompt("which city do you live in ?")
+// if (cityname==="karachi"){
+//  alert("welcome to city of lights")
+// }
+
+          // Question#2
+// var gender=prompt("Are you male or female ?")
+//  if (gender==="male"){
+//   alert("Good Morning Sir!")
+//  }
+//  if (gender==="female"){
+//   alert("Good Morning Miss!")
+//  }
+
+//            Question#3
+// var trafficlight=prompt("What's the traffic light right now ?")
+//  if ( trafficlight==="yellow"){
+//   alert("Ready to move")
+//  }
+//  if (trafficlight==="green"){
+//   alert("Move now")
+//  }
+//   if (trafficlight==="red"){
+//   alert("Must stop")
+//  }
+
+          // Question#4
+// var fuel=prompt("How much fuel is remaining in your car ?")
+//  if ( fuel=== "0.25"){
+//   alert("Please refill the fuel in your car")
+//  }
+           // Question#5
+         
+           // part-a
+// var a ="4"
+// if ("++a=5"){
+//        alert("true")
+// }
+
+//           part-b
+// var b ="84"
+// if ("b++=85"){
+//        alert("true")
+// }
+
+//           part-c
+// var c =prompt("12")
+// if ("c++===13"){
+//        alert("true")
+// }
+// if ("c ===13"){
+//        alert("true-2")
+// }
+// if ("++c <14"){
+//        alert("true-3")
+// }
+// if ("c===14"){
+//        alert("true-4")
+// }
+
+//           part-d
+// var materialcost="20000";
+// var labourcost="2000";
+// var totalcost= materialcost + labourcost;
+// if (totalcost===materialcost + labourcost){
+//        alert("the cost equals")
+// }
+
+           // Question#6
+//            var totalmarks="300"
+// var yournum= prompt("enter your total number")
+// if (yournum > 290 ){
+//        alert("your grade is A+")
+// }
+// if (yournum > 250 ){
+//        alert("your grade is B")
+// }
+// if (yournum > 150 ){
+//        alert("your grade is C")
+// }
+// if (yournum > 100 ){
+//        alert("your grade is D")
+// }
+// if (yournum > 50 ){
+//        alert("your grade is F")
+// }
+
+           // Question#7
+
+// var num= Number (prompt("Guess the number 1 to 10 ") )
+// var secretnum=5
+// if (num === secretnum){
+//        alert("Bingo! you are correct")
+// }
+// else if (num +1 === secretnum){
+//  alert ("you are close enough")
+// }
+// else {
+//     alert("Try again!");
+// }
+
+           // Question#8
+// var num= Number(prompt("select the number (1 to 10) ") )
+// if (num % 3=== 0){
+//        alert("This number is divisible by 3")
+// }
+// else{
+//        alert("This number is not divisible by 3")
+// }
+
+           // Question#9
+// var num= Number(prompt("select the number (1 to 10) ") )
+// if (num % 2=== 0){
+//        alert("This number is even")
+// }
+// else{
+//        alert("This number is odd")
+// }
+
+           // Question#10
+// var tem= Number(prompt("What's the temperature outside? ") )
+// if  (tem===40){
+//        alert("It's too hot outside")
+// }
+// if  (tem===30){
+//        alert("The weahter is normal outside")
+// }
+// if  (tem===20){
+//        alert("The weahter is cold today")
+// }
+// if  (tem===10){
+//        alert("OMG! the weahter is soo cold today")
+// }
