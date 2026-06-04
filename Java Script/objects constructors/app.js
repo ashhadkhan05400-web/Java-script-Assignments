@@ -50,7 +50,7 @@ function Apps(name, category, published_year, ceo_name) {
        
     };
 
-    this.ceo_name_print();n
+    this.ceo_name_print();
 }
 
 let insta = new Apps("Insta", "Entertainment", "2012", "Adam mosseri")
