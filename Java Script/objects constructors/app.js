@@ -46,7 +46,7 @@ function Apps(name, category, published_year, ceo_name) {
     this.published_year = published_year;
 
    this.ceo_name_print = function () {
-        this.ceo_name = ceo_name
+        this.ceo_name = ceo_name;
        
     };
 
