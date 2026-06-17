@@ -1,0 +1,83 @@
+window.onload = function () {
+
+    var loginBtn = document.querySelector(".loginbutton button");
+    var emailInput = document.querySelector(".emalbox input");
+    var passwordInput = document.getElementById("passwordInput");
+
+    loginBtn.onclick = function () {
+        var email = emailInput.value;
+        var password = passwordInput.value;
+
+        if (email === "" && password === "") {
+            alert("Both fields are required.");
+        } else if (email === "") {
+            alert("Email is required.");
+        } else if (password === "") {
+            alert("Password is required.");
+        }
+
+        else if (!emailInput.value.includes("@gmail.com") && !emailInput.value.includes("@yahoo.com")) {
+            alert("Please enter a valid email address.");
+        }
+
+        else if (passwordInput.value.length < 6) {
+            alert("Password must be at least 6 characters long.");
+        }
+        else {
+
+            let savedUser = localStorage.getItem(email);
+
+
+            if (savedUser === null) {
+                alert("Account not found. Please sign up first.");
+            }
+
+            else {
+
+                let userData = JSON.parse(savedUser);
+
+
+                if (userData.pass_word === password) {
+                    alert("Logged in successfully!");
+                    window.location.href = "dashboard.html";
+                }
+
+                else {
+                    alert("Wrong password.");
+                }
+            }
+        }
+    }
+
+
+
+    loginBtn.addEventListener("mouseover", function () {
+        var read_email = emailInput.value;
+        var read_password = passwordInput.value;
+
+
+        if (read_email === "" && read_password === "") {
+            alert("please fill in all the fields");
+        }
+    });
+}
+function eyeclick() {
+    var input = document.getElementById("passwordInput")
+    var eyee = document.getElementById("eye");
+    var slash = document.getElementById("eyee");
+
+    if (input.type === "password") {
+        input.type = "text"
+        eyee.style.display = "none"
+        slash.style.display = "flex"
+    } else {
+        input.type = "password"
+        eyee.style.display = "flex"
+        slash.style.display = "none"
+    }
+
+    if (input.value == "") {
+        eyee.style.display = "flex"
+        slash.style.display = "none"
+    }
+}
